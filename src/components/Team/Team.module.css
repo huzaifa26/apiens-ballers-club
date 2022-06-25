@@ -1,0 +1,228 @@
+.teamContainer{
+    height: auto;
+    min-width: calc(100vw - 100%);
+    width: 100%;
+    background: #0a5162 url(https://themetakongz.com/_img/sec_team_kongz.png) no-repeat center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 15rem 0;
+    flex-wrap: wrap;
+}
+
+.imgDiv{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin-bottom: 10rem;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+
+.imgDiv img:first-child{
+    max-width: 345px;
+    width:  25.256vw;
+}
+
+.imgDiv img:last-child{
+    max-width: 414px;
+    width:  30.307vw;
+
+}
+
+.imgDiv div{
+    width: 20.497vw;
+    height: 28rem;
+    top: -7rem;
+    overflow: hidden;
+}
+
+.line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p.x,
+p.y {
+    position: absolute;
+    width: 20% !important;
+    min-width: 150px;
+    height: 2px !important;
+    margin-top: 150px;
+}
+
+.imgDiv .x{
+    background: aqua !important;
+    transform: rotate(-45deg);
+    transition: all .5s ease-in-out .5s;
+    transform: scale(0) rotate(-45deg);
+}
+
+.imgDiv .xAnime{
+    animation: linesf 1s 1 1s forwards;
+}
+
+.imgDiv .y{
+    background: aqua!important;
+    transform: rotate(45deg);
+    transition: all .5s ease-in-out .5s;
+    transform: scale(0) rotate(-45deg);
+}
+
+.imgDiv .yAnime{
+    animation: linesb 1s 1 1s forwards;
+}
+
+@keyframes linesf {
+    from{
+        transform: scale(0) rotate(-45deg);
+        -webkit-transform: scale(0) rotate(-45deg);
+    }
+
+    to{
+        transform: scale(1) rotate(-45deg);
+        -webkit-transform: scale(1) rotate(-45deg);
+    }
+}
+
+@keyframes linesb {
+    from{
+        transform: scale(0) rotate(45deg);
+        -webkit-transform: scale() rotate(45deg);
+    }
+
+    to{
+        transform: scale(1) rotate(45deg);
+        -webkit-transform: scale(1) rotate(45deg);
+    }
+}
+
+
+.fimg{
+    position: relative;
+    animation: left 1s 1;
+    transition: ease-out;
+    
+}
+
+@keyframes left {
+    from {left: -200px;}
+    to {left: 0px;}
+}
+
+
+
+.simg{
+    position: relative;
+    animation: right 1s 1;
+    transition: ease-in-out;
+    transition-duration: 2s;
+}
+
+@keyframes right {
+    from {right: -200px;}
+    to {right: 0px;}
+  }
+
+.team{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+
+.team div{
+    width: 232px;
+    height: 232px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: rotateY(-100deg);
+}
+
+.team div:nth-child(1){
+    background: url(https://themetakongz.com/_img/team_avata1.png) no-repeat center center / cover;
+}
+
+.team div:nth-child(2){
+    background: url(https://themetakongz.com/_img/team_avata2.png) no-repeat center center / cover;
+}
+
+.team div:nth-child(3){
+    background: url(https://themetakongz.com/_img/team_avata3.png) no-repeat center center / cover;
+}
+
+.team div:nth-child(4){
+    background: url(https://themetakongz.com/_img/team_avata4.png) no-repeat center center / cover;
+}
+
+.team div:nth-child(5){
+    background: url(https://themetakongz.com/_img/team_avata5.png) no-repeat center center / cover;
+}
+
+.team div h3{
+    font-size:1.6rem;
+    color: #1fc7d4;
+}
+
+.team div p{
+    width: 110px;
+    font-size:1.8rem;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+}
+
+.team div p span{
+    display: block;
+}
+
+.team .animation{
+    transform:  perspective(2500px) rotateY(0deg);
+    transition: 0.5s;
+}
+
+@media screen and (max-width:800px){
+    .imgDiv{
+        flex-direction: column;
+    }
+
+    p.x,
+    p.y {
+        position: absolute;
+        margin-top: 100px;
+        margin-left: 10px;
+    }
+
+    .imgDiv img:first-child{
+        min-width: 200px;
+    }
+    
+    .imgDiv img:last-child{
+        min-width: 250px;
+        width:  30.307vw;
+    }
+}
+
+@media screen and (max-width:700px){
+
+    p.x,
+    p.y {
+        margin-top: 100px;
+        margin-left: -8px;
+    }
+}
+
+@media screen and (max-width:500px){
+
+    p.x,
+    p.y {
+        margin-top: 90px;
+        margin-left: -25px;
+    }
+}

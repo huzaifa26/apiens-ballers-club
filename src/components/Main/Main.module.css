@@ -1,0 +1,280 @@
+.mainContainer{
+    height: 97rem;
+    min-width: calc(100vw - 100%);
+    width: 100%;
+    background: var(--blue) url(https://themetakongz.com/_img/main_visual_bg.jpg) no-repeat center center/ cover;
+    position: relative;
+    z-index: 10;
+    margin: 0;
+    padding: 0;
+}
+
+.neon{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    position: absolute;
+    animation-name: neon;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+
+.neon1 {
+    background: url(https://themetakongz.com/_img/effect_01.png) no-repeat center center / cover;
+    animation: neon 1.5s infinite linear 2s;
+}
+
+.neon2 {
+    background: url(https://themetakongz.com/_img/effect_02.png) no-repeat center center / cover;
+    animation: neon 1.5s infinite linear 1s;
+}
+
+.neon3 {
+    background: url(https://themetakongz.com/_img/effect_03.png) no-repeat center center / cover;
+    animation: neon 2.5s infinite linear 1.5s;
+}
+
+.neon4 {
+    background: url(https://themetakongz.com/_img/effect_04.png) no-repeat center center / cover;
+    animation: neon 2s infinite linear .5s;
+}
+
+.neon5 {
+    background: url(https://themetakongz.com/_img/effect_05.png) no-repeat center center / cover;
+    animation: neon 1.8s infinite linear .5s;
+}
+
+@keyframes neon {
+    0% {
+        opacity: 1;
+    }
+    5% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    15% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+    }
+}
+
+.mainContainer div .bright{
+    position: relative;
+    width: 68rem;
+    z-index: 4;
+    position: absolute;
+    top: 19.8rem;
+
+    left: 50%;
+    transform: translatex(-50%);
+    bottom: 20rem;
+}
+
+.mainContainer div .dim{
+    position: relative;
+    width: 68rem;
+    z-index: 3;
+    position: absolute;
+    top: 19.8rem;
+    left: 50%;
+    transform: translatex(-50%);
+    bottom: 20rem;
+}
+
+.mainContainer div .backImg{
+    position: absolute;
+    z-index: 3;
+    top: 31.1rem;
+    left: 50%;
+    transform: translatex(-50%);
+    bottom: 20rem;
+}
+
+.text{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 12rem;
+    z-index: 11;
+    text-align: center;
+    color: wheat;
+}
+
+.text h1{
+    font-size: 7.2rem;
+    color: rgb(31, 199, 212);
+    text-shadow: 1px 1px 10px rgb(31, 199, 212,0.8);
+    margin-bottom: 1rem;
+}
+
+.text h1 span{
+    color: #A3DCE0;
+    text-shadow: 1px 1px 10px #A3DCE0;
+}
+
+.animation{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    bottom: 8rem;
+    z-index: 10;
+    text-align: center;
+    font-size: clamp(24px,5.27vw,7.2rem);
+    color: transparent !important;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #96dadf;
+    margin-bottom: 1rem;
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0) !important;
+    animation-duration: 4.5s;
+    animation-timing-function: linear;
+    animation-delay: 0.1s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: mvtitle;
+}
+
+.animation2{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    bottom: 8rem;
+    z-index: 10;
+    text-align: center;
+    font-size: clamp(24px,5.27vw,7.2rem);
+    color: transparent !important;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #e6acf0;
+    margin-bottom: 1rem;
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0) !important;
+    animation-duration: 4.5s;
+    animation-timing-function: linear;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: mvtitle;
+}
+
+@keyframes mvtitle {
+    0% {
+        opacity: 1;
+    }
+    5% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+        transform: translate(-5px, -3px)
+    }
+    15% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+        transform: translate(3px, 5px)
+    }
+    25% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+        transform: translate(-3px, 4px)
+    }
+    35% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.animation h1, .animation h1{
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0) !important;
+}
+
+.text p{
+    text-shadow: 1px 1px 10px rgba(31, 199, 212, 1), 1px 1px 10px rgba(31, 199, 212, 1);
+    font-size: 1.7rem;
+    width: 35.9vw;
+    margin: 0 auto;
+    min-width: 300px;
+}
+
+@media screen and (max-width: 991.98px)
+{
+    .mainContainer div .bright{
+        width: 500px;
+    }
+    
+    .mainContainer div .dim{
+        width: 500px;
+
+    }
+
+    .mainContainer div .backImg{
+        width: 700px;
+    }
+
+    .actualh1{
+        bottom: 1rem !important;
+    }
+}
+
+@media screen and (max-width: 767.98px)
+{
+    .mainContainer div .bright{
+        width: 400px;
+    }
+    
+    .mainContainer div .dim{
+        width: 400px;
+    }
+
+    .mainContainer div .backImg{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 576.98px)
+{
+
+    .mainContainer{
+        height: 78rem;
+    }    
+    .mainContainer div .bright{
+        width: 340px;
+    }
+    
+    .mainContainer div .dim{
+        width: 340px;
+    }
+
+    .mainContainer div .backImg{
+        width: 380px;
+    }
+
+    .text h1{
+        font-size: 32px !important;
+    }
+
+    .text p{
+        width: 300px;
+    }
+}

@@ -1,0 +1,187 @@
+.outerDiv{
+    min-width: calc(100vw - 100%);
+    background: #14131d url(https://themetakongz.com/_img/roadmap_bg.png) no-repeat center 40%;
+    background-attachment: fixed;
+}
+
+.rpadmapContainer{
+    height: auto;
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    row-gap: 8rem;
+    justify-content: center;
+    padding: 8rem 0;
+}
+
+.card1{
+    width: 30vw;
+    height: 23rem;
+    background: #242330 url(https://themetakongz.com/_img/roadmap_complete.png) no-repeat 110% 130% / 17.1rem auto;
+    border-radius: 35px;
+    color: var(--grey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card1 h2, .card3 h2, .card4 h2{
+    position: relative;
+    top: -6rem;
+    min-width: 80px;
+    min-height: 80px;
+    border-radius: 100%;
+    background-color: #242330;
+    box-shadow: 0px 0px 15px rgb(5 165 207 / 60%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: #02f29d;
+    transform: rotateY(-100deg);
+}
+
+.card1 h2 small{
+    font-size: 1.6rem;
+}
+
+.card1 p, .card3 p, .card4 p{
+    font-size: 1.8rem;
+    padding: 0 25px;
+    text-align: center;
+}
+
+.card2 h2{
+    transform:  perspective(800px) rotateY(0deg);
+    transition: 0.5s;
+}
+
+.card1 p small,.card3 p small,.card4 p small{
+    font-size: 1.8rem;
+    color: #21a2ae;
+}
+
+.cardUn h2{
+    background-color: #1fc7d4;
+    color: #212028;
+    box-shadow: 0 0 0 #000;
+}
+
+
+
+.card3{
+    width: 30vw;
+    height: 23rem;
+    background: #242330;
+    border-radius: 35px;
+    color: var(--grey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background: 
+      linear-gradient(to right, #242330, #242330), 
+      linear-gradient(to top, #0684e5, #03f29d); 
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    box-shadow: 0px 0px 15px rgba(5, 165, 207, .6); 
+}
+
+.card4{
+    width: 30vw;
+    height: 23rem;
+    border-radius: 35px;
+    color: var(--grey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(120deg, rgba(29, 76, 70, 1) 30%, rgba(30, 54, 84, 1) 100%);
+    color: #02f29d;
+}
+
+.outerDiv > h2{
+    padding-top: 5rem;
+    text-align: center;
+    color: white;
+    font-weight: 900;
+    font-size: 3.8rem;
+    text-shadow: 0px 0px 16px rgba(255, 255, 255, 0.8);
+}
+
+.outerDiv > h2 span{
+    color: rgb(31, 199, 212);
+    font-weight: 900;
+    font-size: 3.8rem;
+    text-shadow: 0px 0px 16px rgb(31, 199, 212,0.8);
+}
+
+.card4 p{
+    font-size: 2.5rem;
+    margin-top: -2.9rem;
+}
+
+.btndiv{
+    display: flex;
+    justify-content: center;
+}
+
+.outerDiv .button{
+    height: 6rem;
+    width: 22vw;
+    min-width: 160px;
+    font-size: 1.8rem;
+    color: white;
+    background-image: linear-gradient(to right, #027552 , #034670);
+    border: 0;
+    border-radius: 15px;
+    transition: 0.3s;
+    margin: 0 10px;
+    margin-bottom: 8rem;
+}
+
+.outerDiv .button:hover{
+    background-image: linear-gradient(to right , #034670,#027552);
+}
+
+.card1,.card3,.card4,.card2{
+    max-width: 550px;
+}
+
+@media screen and (max-width: 1120px) {
+    .rpadmapContainer{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .card1 p,.card3 p,.card4 p,.card2 p{
+        padding: 0px 10px;
+    }
+
+    .card1,.card3,.card4,.card2{
+        min-width: 350px;
+        min-height: 200px;
+    }
+
+}
+
+@media screen and (max-width: 786px) {
+    .card1 p, .card3 p, .card4 p{
+        padding: 5px 0;
+    }
+
+    .rpadmapContainer{
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .card1,.card3,.card4,.card2{
+        min-width: 300px;
+        min-height: 200px;
+    }
+
+    .card1 p,.card3 p,.card4 p,.card2 p{
+        padding: 0px 10px;
+    }
+}
